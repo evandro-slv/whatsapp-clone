@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import RoundedImage from "../../atoms/RoundedImage";
 import './ListItem.css'
 import Headline from "../../organisms/Headline";
+import PropTypes from "prop-types";
 
 class ListItem extends Component {
   render() {
@@ -14,5 +15,12 @@ class ListItem extends Component {
     );
   }
 }
+
+ListItem.propTypes = {
+  image: PropTypes.string,
+  header1: PropTypes.string,
+  header2: PropTypes.string,
+  sidetext: PropTypes.string,
+};
 
 export default ListItem;

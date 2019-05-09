@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from "prop-types";
 
 class Page extends Component {
   render() {
@@ -15,5 +16,9 @@ class Page extends Component {
     );
   }
 }
+
+Page.propTypes = {
+  className: PropTypes.string,
+};
 
 export default Page;

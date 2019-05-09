@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Icon from "../../atoms/Icon";
 import './RoundedIconButton.css';
+import PropTypes from "prop-types";
 
 class RoundedIconButton extends Component {
   render() {
@@ -11,5 +12,9 @@ class RoundedIconButton extends Component {
     );
   }
 }
+
+RoundedIconButton.propTypes = {
+  type: PropTypes.string.isRequired
+};
 
 export default RoundedIconButton;

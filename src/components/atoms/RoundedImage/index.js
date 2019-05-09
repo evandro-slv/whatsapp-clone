@@ -10,4 +10,13 @@ class RoundedImage extends Component {
   }
 }
 
+RoundedImage.propTypes = {
+  size: function(props, propName, componentName) {
+    if (!/\d+(px|em|rem)/.test(props[propName])) {
+      return new Error('Invalid prop `' + propName + '` supplied to `' + componentName + '`. Validation failed.'
+      );
+    }
+  },
+};
+
 export default RoundedImage;

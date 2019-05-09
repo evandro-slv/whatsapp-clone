@@ -1,0 +1,21 @@
+.chat-list {
+}
+
+.chat-list .list-item {
+    outline: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color linear .2s;
+    width: initial;
+}
+
+.chat-list .list-item:active {
+    background-color: #ededed;
+    transition: none;
+}
+
+.chat-list .list-item .headline h2 {
+    color: #666;
+}

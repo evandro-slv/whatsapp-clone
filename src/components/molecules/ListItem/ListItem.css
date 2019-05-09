@@ -1,0 +1,36 @@
+.list-item {
+    display: flex;
+    width: 100%;
+
+    outline: 0;
+
+    -webkit-tap-highlight-color: transparent;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.list-item img + .headline {
+    margin-left: 10px;
+}
+
+.list-item span {
+    font-size: .7em;
+    color: #666;
+    line-height: 2.5em;
+}
+
+.list-item .headline {
+    overflow: hidden;
+}
+
+.list-item .headline h1,
+.list-item .headline h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}

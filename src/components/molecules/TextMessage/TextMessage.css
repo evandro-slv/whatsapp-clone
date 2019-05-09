@@ -1,0 +1,82 @@
+.message {
+    display: flex;
+    margin: 0 20px;
+}
+
+.message-body {
+    display: inline-flex;
+    align-items: flex-end;
+
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 0 10px 10px 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+}
+
+.message.message--right .message-body {
+    border-radius: 10px 0 10px 10px;
+    background-color: #DCF8C6;
+}
+
+.message.message--right {
+    justify-content: flex-end;
+}
+
+.message + .message {
+    margin-top: 10px;
+}
+
+.message .headline {
+    font-size: .6rem;
+}
+
+.message .headline h1 {
+    font-size: 1.5em;
+}
+
+.message .headline h1 + h2 {
+    margin-top: 5px;
+}
+
+.message-body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    border-width: 8px 0 0 8px;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+}
+
+.message.message--right .message-body:before {
+    left: auto;
+    right: -8px;
+    border-width: 8px 8px 0 0;
+    border-color: #DCF8C6 transparent;
+}
+
+.message time {
+    color: #999;
+    margin-left: 10px;
+    font-size: .5em;
+}
+
+/* Fix for messages sent subsequently in the same group */
+.message--left + .message--left, .message--right + .message--right {
+    margin-top: 5px;
+}
+
+.message--left + .message--left .message-body, .message--right + .message--right .message-body {
+    border-radius: 10px;
+}
+
+.message--left + .message--left .message-body:before, .message--right + .message--right .message-body:before {
+    border: none;
+}

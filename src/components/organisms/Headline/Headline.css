@@ -1,0 +1,13 @@
+.headline {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+
+    font-size: .5rem;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}

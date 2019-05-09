@@ -1,0 +1,31 @@
+.header {
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #075E54;
+    color: #FFFFFF;
+
+    padding: 10px 0;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.23);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.header .rounded-icon-button:hover {
+    background-color: #077268;
+}
+
+.header .rounded-icon-button:active {
+    background-color: #07867c;
+}
